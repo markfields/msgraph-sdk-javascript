@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Mocha</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.css" />
+		<script type="text/javascript" src="../../lib/graph-js-sdk.js"></script>
+		<script src="http://chaijs.com/chai.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js"></script>
+		<script>
+			mocha.setup("bdd");
+		</script>
+		<!-- <script>
+        function assert(expr, msg) {
+            if (!expr) throw new Error(msg || 'failed');
+        }
+    </script> -->
+		<script src="./test.js"></script>
+		<script>
+			window.onload = () => {
+				mocha.run();
+			};
+		</script>
+	</head>
+
+	<body>
+		<div id="mocha"></div>
+	</body>
+</html>
