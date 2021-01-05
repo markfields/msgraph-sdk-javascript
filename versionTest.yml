@@ -7,12 +7,12 @@ trigger:
 - main
 
 pool:
-  vmImage: 'macOS-latest'
+  vmImage: 'windows-latest'
 
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '13.6.0'
+    versionSpec: '14.0.0'
   displayName: 'Install Node.js'
 
 - script: |
